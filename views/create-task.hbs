@@ -1,0 +1,24 @@
+<h1 class="text-3xl font-bold mb-5">Create task</h1>
+
+<form action="/create-task" method="POST">
+  <label for="name">Name
+    <input name="name" type="text" id="name" />
+  </label>
+  <label for="due_date">Due date
+    <input name="due_date" type="text" id="due_date" />
+  </label>
+  <label for="status">Choose a status:</label>
+  <select name="status" id="status">
+    <option value="pending">Pending</option>
+    <option value="in_progress">In Progress</option>
+    <option value="done">Done</option>
+  </select>
+  <label for="type">Choose a type:</label>
+  <select name="type" id="type">
+    <option value="house">House</option>
+    <option value="work">Work</option>
+    <option value="study">Study</option>
+    <option value="health">Health</option>
+  </select>
+  <button class="p-2 bg-blue-900 text-white" type="submit">Create Task</button>
+</form>
